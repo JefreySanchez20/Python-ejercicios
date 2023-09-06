@@ -1,0 +1,19 @@
+import random
+
+def generar(n):
+    """Genera un arreglo de tamaño n con todos sus elementos aleatorios entre 1 y 100."""
+    # Crea un arreglo vacío de tamaño n.
+    arreglo = []
+    # Itera sobre el arreglo.
+    for i in range(n):
+        # Genera un número aleatorio entre 1 y 100.
+        numero_aleatorio = random.randint(1, 100)
+        # Añade el número aleatorio al arreglo.
+        arreglo.append(numero_aleatorio)
+    # Devuelve el arreglo.
+    return arreglo
+
+# Llama a la función generar para crear un arreglo de tamaño 10.
+mi_arreglo = generar(10)
+# Imprime el arreglo generado.
+print(mi_arreglo)
